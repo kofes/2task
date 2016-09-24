@@ -11,4 +11,9 @@
         android:orderInCategory="1"
         android:icon="@mipmap/ic_message_text" />
 
+    <item android:id="@+id/actionBattItem"
+        android:title="@string/menu_item_achivments"
+        android:orderInCategory="1"
+        android:icon="@mipmap/ic_message_text" />
+
 </menu>

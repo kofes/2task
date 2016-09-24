@@ -5,6 +5,7 @@
 
     <string name="menu_item_tasks">Tasks</string>
     <string name="menu_item_profile">Profile</string>
+    <string name="menu_item_achivments">Achivments</string>
 
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>

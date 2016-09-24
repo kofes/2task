@@ -75,7 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         showNatificationTab();
                         break;
                     case R.id.actionProfileItem:
-                        showPrifileActivity();
+//                        showProfileActivity();
+                        showActivity(ProfileActivity.class);
                         break;
                 }
 
@@ -98,8 +99,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewPager.setCurrentItem(Constants.TAB_1);
     }
 
-    private void showPrifileActivity() {
+    private void showProfileActivity() {
         Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    private void showActivity(Class activity){
+        Intent intent = new Intent(this, activity);
         startActivity(intent);
     }
 
