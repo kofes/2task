@@ -1,6 +1,7 @@
 package com.a2task.a2task.adapter;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.support.v7.widget.CardView;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.a2task.a2task.MainActivity;
 import com.a2task.a2task.R;
 import com.a2task.a2task.databases.DataBaseNote;
 import com.a2task.a2task.dto.RemindDTO;
@@ -66,7 +68,7 @@ public class RemindListAdapter extends RecyclerView.Adapter<RemindListAdapter.Re
         return data.size();
     }
 
-    public  static class RemindViewHoldre extends RecyclerView.ViewHolder {
+    public static class RemindViewHoldre extends RecyclerView.ViewHolder {
         CardView cardView;
         Toolbar title;
         TextView text_note;
@@ -89,11 +91,11 @@ public class RemindListAdapter extends RecyclerView.Adapter<RemindListAdapter.Re
                 public boolean onMenuItemClick(MenuItem item) {
                     if(item.getItemId() == R.id.actionDeleteItem) {
                         SQLiteDatabase database = dbNote.getWritableDatabase();
-
                         ContentValues contentValues = new ContentValues();
-//
                         database.delete(DataBaseNote.TABLE_TASK, DataBaseNote.KEY_ID +" = " + id, null);
                         dbNote.close();
+//                        ((MainActivity) )
+
                     }
                     return false;
                 }
