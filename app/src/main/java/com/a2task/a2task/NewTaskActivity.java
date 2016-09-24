@@ -67,6 +67,7 @@ public class NewTaskActivity extends AppCompatActivity implements View.OnClickLi
                 contentValues.put(DataBaseNote.KEY_NOTE, etText.getText().toString());
                 contentValues.put(DataBaseNote.KEY_DOIT, false);
                 contentValues.put(DataBaseNote.KEY_DATE, etDate.getText().toString());
+
                 switch (rgType.getCheckedRadioButtonId()) {
                     case R.id.rIdea:
                         contentValues.put(DataBaseNote.KEY_TYPE, "idea");

@@ -87,16 +87,11 @@ public class RemindListAdapter extends RecyclerView.Adapter<RemindListAdapter.Re
 
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    if(item.getTitle() == "Delete") {
-                        Toast toast = Toast.makeText(itemView.getContext(),
-                                "Пора прыгать с окна!",
-                                Toast.LENGTH_SHORT);
-                        toast.show();
-
+                    if(item.getItemId() == R.id.actionDeleteItem) {
                         SQLiteDatabase database = dbNote.getWritableDatabase();
 
                         ContentValues contentValues = new ContentValues();
-
+//
                         database.delete(DataBaseNote.TABLE_TASK, DataBaseNote.KEY_ID +" = " + id, null);
                         dbNote.close();
                     }

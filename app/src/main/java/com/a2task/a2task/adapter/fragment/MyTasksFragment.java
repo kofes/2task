@@ -29,7 +29,6 @@ public class MyTasksFragment extends AbstractTabFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-
         return view;
     }
 
