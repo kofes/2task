@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
         fab.setOnClickListener(this);
 
+        FloatingActionButton fab_restart = (FloatingActionButton)findViewById(R.id.fab_restart);
+        fab_restart.setOnClickListener(this);
+
     }
 
     private void initTabs() {
@@ -111,8 +114,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, NewTaskActivity.class);
-        startActivity(intent);
+        if(R.id.fab == v.getId()) {
+            Intent intent = new Intent(this, NewTaskActivity.class);
+            startActivity(intent);
+        }
+        if(R.id.fab_restart == v.getId()) {
+            finish();
+            startActivity(getIntent());
+        }
+
     }
 
 }
