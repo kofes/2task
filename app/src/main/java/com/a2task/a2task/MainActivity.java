@@ -154,9 +154,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, NewTaskActivity.class);
-        startActivity(intent);
-//        reload();
+
+        if(R.id.fab == v.getId()) {
+            Intent intent = new Intent(this, NewTaskActivity.class);
+            startActivity(intent);
+        }
+        if(R.id.fab_restart == v.getId()) {
+            finish();
+            startActivity(getIntent());
+        }
+
     }
 
     @Override
