@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainBg">#e2e2e2</color>
+    <color name="colorWhite">#e2e2e2</color>
+    <color name="colorBlack">#303030</color>
+
+    <color name="colorByrthday">#f45454</color>
+    <color name="colorTask">#0ae29a</color>
+    <color name="colorIdea">#f7c245</color>
+</resources>

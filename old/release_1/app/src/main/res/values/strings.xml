@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">2task PrePreAlpha</string>
+    <string name="new_task">New task</string>
+    <string name="search_title">Search</string>
+
+    <string name="menu_item_tasks">Tasks</string>
+    <string name="menu_item_profile">Profile</string>
+    <string name="menu_item_achivments">Achivments</string>
+
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+
+    <string name="tab_item_all_tasks">All Tasks</string>
+    <string name="tab_item_my_tasks">My Tasks</string>
+
+    <string name="menu_item_edit">Edit</string>
+    <string name="menu_item_delete">Delete</string>
+</resources>
