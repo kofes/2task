@@ -16,13 +16,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import org.json.*;
 import com.a2task.a2task.adapter.TabsFragmentAdapter;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
-
-import java.util.Iterator;
 
 /**
  * Created by 333da on 16.07.2016.
@@ -47,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setTheme(R.style.AppDefault);
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT);
-        fillDataBase();
+//        fillDataBase();
         initToolbar();
         initNavigationView();
         initTabs();
@@ -66,29 +63,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    private void fillDataBase(){
-        String info= "";
-        try {
-            JSONArray JSONinfo = new JSONArray(info);
-            for(int i = 0;i < JSONinfo.length();i++){
-                JSONObject jsonData = JSONinfo.getJSONObject(i);
-                String res = "insert .. ";
 
-                Iterator<?> keys = jsonData.keys();
 
-                while( keys.hasNext() ) {
-                    String key = (String)keys.next();
-                    if ( jsonData.get(key) instanceof JSONObject ) {
-                        res += " " + key + "=" + jsonData.getString(key);
-                    }
-                }
 
-            }
-        }
-        catch (JSONException e) {
 
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void initTabs() {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
